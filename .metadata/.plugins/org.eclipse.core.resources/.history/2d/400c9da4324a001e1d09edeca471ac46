@@ -1,0 +1,23 @@
+package com.manu.entity;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import com.manu.repo.StudentRepository;
+
+public class StudentTestRunner implements CommandLineRunner {
+
+	
+	@Autowired
+	private StudentRepository repo;
+	
+	@Override
+	public void run(String... args) throws Exception
+	{
+		
+		Student s=new Student();
+		
+
+	}
+
+}

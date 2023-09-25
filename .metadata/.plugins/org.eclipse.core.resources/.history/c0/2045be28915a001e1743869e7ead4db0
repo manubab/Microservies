@@ -1,0 +1,5 @@
+package com.manu.service;
+
+public interface UserService {
+
+}

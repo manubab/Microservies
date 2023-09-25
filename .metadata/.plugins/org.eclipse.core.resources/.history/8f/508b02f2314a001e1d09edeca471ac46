@@ -1,0 +1,14 @@
+package com.manu.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name="Student_Manu_Details")
+public class Student 
+{
+	
+	
+
+}

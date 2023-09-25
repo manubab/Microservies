@@ -1,0 +1,5 @@
+package com.manu.entity;
+
+public class Student {
+
+}

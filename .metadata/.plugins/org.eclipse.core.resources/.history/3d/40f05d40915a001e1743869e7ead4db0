@@ -1,0 +1,12 @@
+package com.manu.service;
+
+import com.manu.User;
+
+public interface UserService 
+{
+	
+	public User getUser(String userId);
+	
+	public String saveUser(User user); 
+
+}

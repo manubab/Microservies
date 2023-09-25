@@ -1,0 +1,5 @@
+package com.manu.repo;
+
+public interface UserRepo {
+
+}

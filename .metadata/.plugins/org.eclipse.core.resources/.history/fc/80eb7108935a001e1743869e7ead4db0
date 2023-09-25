@@ -1,0 +1,29 @@
+package com.manu.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.manu.User;
+@Component
+public class UserServiceimpl implements UserService {
+
+
+	public User getUser(String userId) {
+		
+		return null;
+	}
+
+	@Override
+	public String saveUser(User user) {
+	
+		return null;
+	}
+
+	@Override
+	public List<User> getAllUsers() {
+	
+		return null;
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.manu.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.manu.consumer.CartConsumerFeign;
+
+@RestController
+@RequestMapping("/order")
+public class OrderRestController
+{
+	@Autowired
+	private CartConsumerFeign consumer;
+	
+	@GetMapping("/show")
+	public ResponseEntity<String> showMessage()
+	{
+         String s=consumer.showMessage().getBody();
+         
+     return   ResponseEntity.ok("Order placed with "+s);
+	}
+
+}
